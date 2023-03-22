@@ -1,0 +1,327 @@
+/* IT IS THE LINK FOR THE GOOGLE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root {
+    --primary-color: #102b40;
+    --secondary-text-color: #577592;
+    --accent-color: #1196fc;
+    --accent-dark-color: #0b67ae;
+    --padding-inline-section:2rem;
+
+  }
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+  }
+  h1{
+    font-size:3.5rem ;
+    font-weight: 500;
+    color: #183b56;
+   
+  }
+  h2{
+    font-size:2rem ;
+    font-weight: 500;
+    color: #183b56;
+  }
+  h3{
+    font-size:1.4rem ;
+    font-weight: 500;
+    color: #183b56;
+  }
+
+  p{
+    font-family: 'Roboto', sans-serif;
+    font-size:1.8rem;
+    color:var(--secondary-text-color);
+  }
+
+  a{
+    text-decoration: none;
+    display: inline-block;
+  }
+
+/* utility classes ........................................................*/
+.container{
+   
+    width: 90vw;
+    /* background-color:#2294ed; */
+    margin-inline: auto; 
+    padding-inline:var(--padding-inline-section);
+}
+.small_text{
+    font-size:1rem;
+    font-weight: 700;
+  }
+
+  .flex{
+    display: flex;
+    align-items: center;
+  }
+
+  ul{
+    list-style: none;
+  }
+
+  .hover_link{
+    color: var(--primary-text-color);
+    transition: .3s ease-out;
+  }
+  
+  .hover_link:hover{
+    color: var(--accent-color);
+  }
+
+  .pri_btn{
+    background-color: var(--accent-color);
+    border-radius: 0.3rem;
+    font-weight: 500;
+    padding: 0.8rem 1.8rem;
+/* here the important will over write the behaviour of the previous all class applied to it */
+    color: white !important;
+    box-shadow: 0px 0px 2px var(--secondary-text-color);
+    transition: 0.3s ease-out;
+  }
+  .pri_btn:hover{
+    background-color: var(--accent-dark-color);
+  }
+
+
+  .sec_btn{
+    border: 0.05rem  solid var(--secondary-text-color);
+    border-radius: 0.3rem;
+    font-weight: 500;
+    padding: 0.8rem 1.8rem;
+/* here the important will over write the behaviour of the previous all class applied to it */
+    color: var(--secondary-text-color) !important;
+    box-shadow: 0px 0px 2px var(--secondary-text-color);
+    transition: 0.3s ease-out;
+  }
+  .sec_btn:hover{
+   border-color: var(--accent-color);
+    color: var(--accent-color) !important;
+  }
+/* top banner */
+.top_banner{
+    height: 9vh;
+    width: 100%;
+    background-color: rgb(216, 62, 6);
+    background-image: url("./IMAGES/img1.jpg");
+    background-repeat: repeat;
+    background-size: 6rem 6.5rem;
+    display: flex;
+    align-items: center;
+}
+  .banner_text{
+    color:black;
+    padding: 1rem ;
+    text-align: center;
+  }
+
+/* nav bar */
+ .main_nav{
+    /* background-color: cadetblue; */
+    justify-content: space-between;
+    margin-top: 1.8rem;
+    margin-left: -0rem;
+  
+ }
+ .company_logo img{
+    width: 11rem;
+    
+ }
+ 
+ .nav_links ul{
+    justify-content: end;
+    gap: 2rem;
+    margin-right: -5rem;
+ }
+
+ /*TOP MOST HEADER SECTION */
+
+ .header-section{
+  /* background-color:chartreuse; */
+  height: 84vh;
+  justify-content:space-between;
+ }
+ .header-left{
+  /* background-color: violet; */
+  width: 40vw;
+  height: 45vh;
+  margin-top: 5.8rem;
+  margin-left: -1.9rem;
+ }
+ .header-left p{
+  line-height: 2.5rem;
+ }
+ .header_btn{
+  margin-top: 2rem;
+  padding: 1.2rem 3rem;
+  font-size: 1.3rem;
+ }
+ .header-right img{
+  /* background-color: coral; */
+  /* width: 47vw; */
+  margin-top: 6.5rem;
+  height: 71vh;
+  margin-right: -1.9rem;
+ }
+
+ /* COMAPANY IMAGES */
+ .text_company{
+  /* background-color: purple; */
+  text-align: center;
+  margin-top: 4rem;
+  
+ }
+ .company_imgages{
+  margin-top: 2rem;
+  justify-content: space-between;
+  margin-left: -3rem;
+  margin-right: -3rem;
+ }
+ 
+ .comp_logo {
+  width: 10rem;
+ }
+
+ /* features section */
+ .features_section{
+  background-image: url("./IMAGES/img17.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  }
+ .feature-sec{
+  flex-direction: column !important;
+  align-content: center;
+ }
+ .text_features{
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  font-size: 2.3rem;
+  color: #183b56;
+ }
+ .features-btn{
+  font-size: 1.3rem;
+  font-weight: 500;
+  color:#183b56 !important;
+ }
+
+/* main features */
+.pri-con{
+  justify-content: center;
+  margin-left: 5rem;
+  
+  flex-wrap: wrap;
+  
+}
+.subcontainer{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  /* background-color: red; */
+  width: 23rem;
+  text-align: center;
+  
+}
+
+.subcontainer img{
+  width: 3.5rem;
+}
+
+.subcontainer h3{
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.subcontainer p{
+  margin-top: 1rem;
+  font-weight: 100;
+}
+
+/* feature cards */
+.bigfeature-left img{
+  /* background-color: seagreen; */
+  margin-top: 3rem;
+  margin-right: 4rem;
+  width: 45rem;
+  height: 40rem;
+}
+
+.bigfeature-right h3{
+  margin-bottom: 0.8rem;
+}
+
+.bigfeature-right h1{
+  margin-bottom: 0.8rem;
+  font-size: 2.2rem;
+}
+.bigfeature-right h2{
+  margin-top: 2rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.5rem;
+}
+.bigfeature-right p{
+  margin-bottom: 0.8rem;
+  font-weight: 00 ;
+}
+.g{
+  margin-top: 1.8rem;
+}
+.g img{
+  width: 4rem;
+}
+.g h3{
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+.g h3 p{
+  font-size: 1.2rem;
+}
+
+/* example section */
+.exampletext{
+  margin-top: 10rem;
+  text-align: center;
+  
+ }
+.exampletext h1{
+ font-size: 3rem ;
+}
+.exampletext a{
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #183b56!important;
+}
+.eg-card{
+  margin-top: 1.5rem;
+  justify-content: space-evenly;
+}
+.card{
+  position: relative;
+  background-color: #1196fc;
+  width: 23vw;
+  height: 50vh;
+ 
+  
+}
+.card p{
+  color: white;
+  font-size: 2rem;
+}
+.card-txt{
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
